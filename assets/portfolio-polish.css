@@ -10,3 +10,17 @@ h1,h2,h3{letter-spacing:-.025em}h2{line-height:1.22}p,li{line-height:1.72}
 .next-case{margin-top:40px;padding:22px;border:1px solid #42607a;border-radius:11px;background:#14293f}.next-case a{font-weight:700}
 @media(max-width:700px){.story-arc{grid-template-columns:1fr}.portfolio-nav{align-items:flex-start}.portfolio-nav .nav-links{gap:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Portfolio-wide product storytelling and accessibility */
+.project-collection{margin:48px 0 28px;padding-top:28px;border-top:1px solid var(--portfolio-line)}
+.project-collection .collection-lead{max-width:780px;color:#c9d9e8}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:22px 0}
+.project-card{background:linear-gradient(145deg,#172f47,#102338);border:1px solid #415b73;border-radius:14px;padding:24px;transition:border-color .18s ease,transform .18s ease}
+.project-card:hover{border-color:#8bd0ff;transform:translateY(-2px)}
+.project-card h3{margin:8px 0;font-size:1.35rem}
+.project-card p{color:#cbdbe8}
+.project-card a{font-weight:700}
+.project-stage{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:#8bd0ff;font-weight:800}
+.story-proof{border-left:3px solid #8bd0ff;padding:15px 20px;background:#14293f;margin:25px 0;color:#d5e4f1}
+@media(max-width:700px){.project-grid{grid-template-columns:1fr}.project-card{padding:20px}}
+@media(prefers-reduced-motion:reduce){.project-card{transition:none}.project-card:hover{transform:none}}
