@@ -103,3 +103,9 @@ body .career-portrait{position:absolute;right:0;top:34px;width:clamp(150px,18vw,
 body .contact-portrait{float:right;width:92px;height:92px;object-fit:cover;object-position:center 35%;border-radius:50%;border:2px solid #729ebd;margin:0 0 12px 24px}
 @media(max-width:850px){body .executive-identity-photo .executive-identity-caption{padding:15px 8px 9px;font-size:.55rem}body .career-photo-hero{padding-right:0}body .career-portrait{position:relative;float:right;top:auto;right:auto;width:128px;height:128px;margin:0 0 15px 20px}}
 @media(max-width:540px){body .executive-identity-photo{height:220px;justify-content:flex-end;align-items:flex-end}body .executive-identity-photo img{object-position:center 34%}body .executive-identity-photo .executive-identity-caption{width:auto;min-width:55%;padding:24px 16px 16px;text-align:right;font-size:.7rem}body .career-portrait{width:100px;height:100px}body .contact-portrait{width:72px;height:72px}}
+
+/* Portrait framing correction: prioritize full head over filling the card */
+body .executive-identity-photo img{object-fit:contain;object-position:center top;background:#10283b}
+body .career-portrait,body .contact-portrait{object-fit:contain;object-position:center top;background:#10283b}
+@media(max-width:850px){body .executive-identity-photo img{object-fit:contain;object-position:center top}}
+@media(max-width:540px){body .executive-identity-photo img{object-fit:contain;object-position:center top}}
