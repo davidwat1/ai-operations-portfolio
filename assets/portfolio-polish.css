@@ -75,3 +75,14 @@ body ::selection{background:#276a72;color:white}
 @media(min-width:1000px){body .hero{padding-top:82px;padding-bottom:65px}body .section{padding-top:55px;padding-bottom:55px}}
 @media(max-width:720px){body :is(header,main,footer){padding-left:20px;padding-right:20px}body header{gap:16px}body header nav{gap:10px 17px}body header nav a{font-size:.82rem}body .hero{padding-top:42px}body .hero h1{font-size:clamp(2.3rem,9vw,3.5rem)}body :is(.challenge-item,.project-card,.stat,.panel,.subpanel){border-radius:13px}}
 @media(prefers-reduced-motion:reduce){body :is(.actions a,.links a,.challenge-item,.story,.chapter,.project-card){transition:none!important;transform:none!important}}
+
+/* Homepage identity: intentional initials until an approved high-resolution portrait is supplied */
+body .executive-hero{min-height:530px;padding-right:clamp(0px,24vw,290px)}
+body .executive-identity{position:absolute;right:8px;top:75px;width:clamp(190px,22vw,262px);aspect-ratio:4/5;border-radius:28px;border:1px solid rgba(154,223,216,.38);background:radial-gradient(circle at 50% 33%,rgba(83,179,173,.27),transparent 54%),linear-gradient(155deg,#173b4c,#0a1b2c);box-shadow:0 25px 80px rgba(0,0,0,.3),inset 0 1px rgba(255,255,255,.13);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:23px;overflow:hidden}
+body .executive-identity:before{content:"";position:absolute;inset:10px;border:1px solid rgba(164,222,217,.13);border-radius:20px;pointer-events:none}
+body .executive-monogram{display:grid;place-items:center;width:112px;height:112px;border-radius:50%;border:1px solid #7ec8c3;background:linear-gradient(145deg,#25596a,#123143);font-size:2.5rem;letter-spacing:-.07em;font-weight:750;color:#e9fbf8}
+body .executive-identity-caption{font-size:.78rem;letter-spacing:.14em;font-weight:800;text-align:center;color:#f2fbfb;line-height:1.7}
+body .executive-identity-caption small{font-size:.67rem;letter-spacing:.025em;font-weight:500;color:#b6d1d8}
+body header .nav-contact{padding:7px 14px;border:1px solid #648e96;border-radius:999px;color:#baf2e9}
+@media(max-width:850px){body .executive-hero{padding-right:0;min-height:0}body .executive-identity{position:relative;right:auto;top:auto;float:right;width:150px;aspect-ratio:1;margin:0 0 18px 22px;border-radius:18px;gap:8px}body .executive-monogram{width:65px;height:65px;font-size:1.6rem}body .executive-identity-caption{font-size:.57rem}body .executive-identity-caption small{display:none}}
+@media(max-width:540px){body .executive-identity{float:none;width:100%;height:104px;aspect-ratio:auto;margin:0 0 24px;flex-direction:row;gap:18px}body .executive-identity-caption{text-align:left;font-size:.72rem}body .executive-identity-caption small{display:block;font-size:.6rem}body .executive-monogram{flex:0 0 64px}}
