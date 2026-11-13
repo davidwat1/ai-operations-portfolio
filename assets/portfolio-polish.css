@@ -134,3 +134,14 @@ body .executive-hero .intro{color:#d4e0ea}
 @media(max-width:850px){body .executive-hero{background-image:linear-gradient(90deg,rgba(6,19,33,.95),rgba(6,19,33,.86)),url("../Misty%20Mountain%20Valley%20at%20Golden%20Hour.png");background-position:55% center}}
 @media(max-width:540px){body .executive-hero{padding:28px 18px 30px;margin:12px 0;border-radius:12px;background-image:linear-gradient(180deg,rgba(6,19,33,.93),rgba(6,19,33,.87)),url("../Misty%20Mountain%20Valley%20at%20Golden%20Hour.png");background-position:58% center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* PNW visual continuity: quiet story transition and closing invitation */
+body .story-journey{position:relative;isolation:isolate}
+body .story-journey:before{content:"";position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,transparent,rgba(142,184,213,.65),transparent);pointer-events:none}
+body .contact-section{position:relative;isolation:isolate;overflow:hidden;border:1px solid rgba(145,181,207,.3);border-radius:16px;margin:38px 0 24px;padding:clamp(30px,4vw,52px);background-image:linear-gradient(90deg,rgba(6,19,33,.97) 0%,rgba(6,19,33,.94) 45%,rgba(6,19,33,.77) 100%),url("../Misty%20Mountain%20Valley%20at%20Golden%20Hour.png");background-size:cover;background-position:center 58%;box-shadow:0 18px 45px rgba(0,0,0,.16)}
+body .contact-section h2,body .contact-section .section-intro,body .contact-section .eyebrow,body .contact-section .contact-actions,body .contact-section .fine{position:relative;z-index:1}
+body .contact-section .section-intro{color:#e0eaf2}
+body .contact-section .fine{color:#c6d7e4}
+body .contact-section .fine a{color:#b5dfff}
+@media(max-width:850px){body .contact-section{background-image:linear-gradient(90deg,rgba(6,19,33,.95),rgba(6,19,33,.84)),url("../Misty%20Mountain%20Valley%20at%20Golden%20Hour.png")}}
+@media(max-width:540px){body .contact-section{padding:28px 19px;border-radius:12px;background-image:linear-gradient(180deg,rgba(6,19,33,.96),rgba(6,19,33,.88)),url("../Misty%20Mountain%20Valley%20at%20Golden%20Hour.png");background-position:60% center}}
